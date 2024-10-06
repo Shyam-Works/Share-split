@@ -182,6 +182,7 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
                 type='text' 
                 value={bill} 
                 onChange={(e)=> setBill(Number(e.target.value))} 
+                placeholder='bill value'
                 
             />
 
@@ -190,7 +191,7 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
                 type='text' 
                 value={paidByUser}
                 onChange={(e)=> setPaidByUser(Number(e.target.value))} 
-                
+                placeholder='Your bill'
             />
 
             <h4>{selectedFriend.name}'s expense</h4>
@@ -198,6 +199,7 @@ function FormSplitBill({ selectedFriend, onSplitBill }) {
                 type='text' 
                 disabled 
                 value={paidByFriend} 
+                placeholder="friend's bill"
                 
             />
 
